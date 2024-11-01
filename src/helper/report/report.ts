@@ -3,15 +3,15 @@ const report = require("multiple-cucumber-html-reporter");
 report.generate({
     jsonDir: "test-results",
     reportPath: "test-results/reports/",
-    reportName: "Playwright Automation Report",
-    pageTitle: "BookCart App test report",
+    reportName: "Playwright JS Automation Report",
+    pageTitle: "CloudBees Inc - Udacity Catalog test report",
     displayDuration: false,
     metadata: {
         browser: {
             name: "chrome",
-            version: "112",
+            version: "130",
         },
-        device: "Koushik - PC",
+        device: "Mano - PC",
         platform: {
             name: "Windows",
             version: "10",
@@ -20,8 +20,8 @@ report.generate({
     customData: {
         title: "Test Info",
         data: [
-            { label: "Project", value: "Book Cart Application" },
-            { label: "Release", value: "1.2.3" },
+            { label: "Project", value: "Udacity" },
+            { label: "Release", value: "1.1.1" },
             { label: "Cycle", value: "Smoke-1" }
         ],
     },

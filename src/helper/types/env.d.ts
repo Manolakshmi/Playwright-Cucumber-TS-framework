@@ -5,7 +5,7 @@ declare global {
         interface ProcessEnv {
             BROWSER: "chrome" | "firefox" | "webkit",
             ENV: "staging" | "prod" | "test",
-            BASEURL: string,
+            BASEURL: "https://www.udacity.com/",
             HEAD: "true" | "false"
         }
     }

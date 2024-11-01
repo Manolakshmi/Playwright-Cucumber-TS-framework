@@ -1,44 +1,31 @@
-# Playwright (TS binding) + Cucumber (BDD)
+# Playwright Cucumber Testing Framework
 
 Cucumber is a popular behavior-driven development (BDD) tool that allows developers and stakeholders to collaborate on defining and testing application requirements in a human-readable format. 
 TypeScript is a powerful superset of JavaScript that adds optional static typing, making it easier to catch errors before runtime. By combining these two tools, we can create more reliable and maintainable tests.
 
-## Features
+# Overview
+This project implements a testing framework using Playwright and Cucumber for automated UI testing of the Udacity catalog. The framework supports search functionality and validates results against a mocked API response.
 
-1. Awesome report with screenshots, videos & logs
-2. Execute tests on multiple environments 
-3. Parallel execution
-4. Rerun only failed features
-5. Retry failed tests on CI
-6. Github Actions integrated with downloadable report
-7. Page object model
+# Features
+1. Automated navigation to the Udacity catalog.
+2. Search functionality for specific terms.
+3. UI results validation against mocked API responses.
+4. Cucumber integration for behavior-driven development (BDD).
 
-## Sample report
-![image](https://github.com/ortoniKC/Playwright_Cucumber_TS/assets/58769833/da2d9f5a-85e7-4695-8ce2-3378b692afc4)
-
-
-## Project structure
-
-- .github -> yml file to execute the tests in GitHub Actions
-- src -> Contains all the features & Typescript code
-- test-results -> Contains all the reports related file
-
-## Reports
-
-1. [Mutilple Cucumber Report](https://github.com/WasiqB/multiple-cucumber-html-reporter)
-2. Default Cucumber report
-3. [Logs](https://www.npmjs.com/package/winston)
-4. Screenshots of failure
-5. Test videos of failure
-6. Trace of failure
-
-## Get Started
+# Requirements
+Node.js (v14 or higher)
+npm (Node Package Manager)
+TypeScript
+Playwright
+Cucumber
+Chai (for assertions)
+Installation
 
 ### Setup:
 
-1. Clone or download the project
+1. Clone or download the project: git clone <repository-url>
 2. Extract and open in the VS-Code
-3. `npm i` to install the dependencies
+3. `npm install` to install the dependencies
 4. `npx playwright install` to install the browsers
 5. `npm run test` to execute the tests
 6. To run a particular test change  
@@ -66,6 +53,3 @@ npm run test --TAGS="@test or @add"
 10. `src\helper\auth` -> Storage state (Auth file)
 11. `src\helper\util` -> Read test data from json & logger
 
-## Tutorials
-1. Learn Playwright - [Playwright - TS](https://youtube.com/playlist?list=PL699Xf-_ilW7EyC6lMuU4jelKemmS6KgD)
-2. BDD in detail - [TS binding](https://youtube.com/playlist?list=PL699Xf-_ilW6KgK-S1l9ynOnBGiZl2Bsk)
